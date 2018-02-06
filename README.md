@@ -1,6 +1,6 @@
 ## Test
 
-#### Calabash-Android
+### Calabash-Android
 ---
 > 
 - 行为驱动开发（Behavior-driven development，缩写BDD）是一种敏捷软件开发的技术。它通过用自然语言书写非程序员可读的测试用例扩展了测试驱动开发方法。
@@ -78,3 +78,7 @@ Feature: 登录测试
 		Then I pass "login" scenario
 		登录结束
 ```
+#### 参考
+> - [饿了么物流技术-Calabash探索](http://lrd.ele.me/2017/03/20/Calabash%E6%8E%A2%E7%B4%A21-Run%20Calabash/)
+> - [Calabash-Android官方文档](https://github.com/calabash/calabash-android/blob/master/ruby-gem/lib/calabash-android/canned_steps.md)
+> - [Calabash官方文档-Steps说明](https://github.com/calabash/calabash-android/blob/master/ruby-gem/lib/calabash-android/canned_steps.md)

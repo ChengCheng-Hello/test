@@ -49,4 +49,32 @@ Feature: 登录测试
 - Scenario：场景，在这里可以简单的理解为一个个的细分用例，通常情况下需要多个场景拼接来完成一个具体的测试用例。
 - Step：实现场景的步骤代码。
 4. 生成测试报告
-
+```bash
+calabash-android run app-_test-debug.apk —format html —out reports.html —format pretty
+```
+![测试报告](/calabash/calabash_repost_shot.png)
+5. 预定义自定义的Step
+```ruby
+Then /^I pass "([^\"]*)" scenario$/ do |text|
+	if text == "login"
+		wait_for_element_exists("* id:'btn_login'")
+		tap_when_element_exists("* id:'btn_login'")
+		wait_for_text("账号", timeout: 5)
+		clear_text_in("android.widget.EditText index:0")
+		clear_text_in("android.widget.EditText index:1")
+		enter_text("android.widget.EditText index:0", "13241967851")
+		enter_text("android.widget.EditText index:1", "cc123456")
+		tap_when_element_exists("* id:'tv_login'")
+		wait_for_text("校区名片", timeout: 20)
+		screenshot_embed
+		puts "登录结束"
+	end
+end
+```
+执行自定义的Step
+```ruby
+Feature: 登录测试
+	Scenario: 使用正确手机号，密码登录
+		Then I pass "login" scenario
+		登录结束
+```

@@ -79,7 +79,11 @@ Feature: 登录测试
 		Then I pass "login" scenario
 		登录结束
 ```
-#### 参考
+
+6. 视频
+[执行测试用例](https://youtu.be/noiG2uAEmTo)
+
+#### 参考文档
 > - [饿了么物流技术-Calabash探索](http://lrd.ele.me/2017/03/20/Calabash%E6%8E%A2%E7%B4%A21-Run%20Calabash/)
 > - [Calabash-Android官方文档](https://github.com/calabash/calabash-android/blob/master/ruby-gem/lib/calabash-android/canned_steps.md)
 > - [Calabash官方文档-Steps说明](https://github.com/calabash/calabash-android/blob/master/ruby-gem/lib/calabash-android/canned_steps.md)

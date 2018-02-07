@@ -19,6 +19,9 @@
 5. 视频(Android&Ios)
 [执行测试用例](https://youtu.be/XQRgkCn6c8c)
 
+6. 问题
+- Toast识别问题：必须使用LENGTH_LONG（3500ms）才能识别，如果是LENGTH_SHORT（2000ms）大部分都识别不出来。（Appium-1.3.1）
+
 #### 参考文档
 > - [美团-基于 Appium 的 Android UI 自动化测试](https://tech.meituan.com/appium-mock-test.html)
 > - [官方文档](https://github.com/appium/appium)

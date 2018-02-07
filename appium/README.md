@@ -24,3 +24,4 @@
 > - [官方文档](https://github.com/appium/appium)
 > - [官方示例代码](https://github.com/appium/sample-code)
 > - [饿了么物流技术-自动化之旅--Appium](http://lrd.ele.me/2017/02/17/%E8%87%AA%E5%8A%A8%E5%8C%96%E4%B9%8B%E6%97%85--Appium/)
+> - [Appium 元素定位方式大揭秘](https://juejin.im/post/5997dff7f265da24921b170d)
